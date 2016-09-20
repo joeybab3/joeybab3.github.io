@@ -1,0 +1,32 @@
+body
+		{
+			background-color:#333;
+			
+		}
+		header
+		{
+			font-family: Impact, Charcoal, sans-serif;
+			text-align:center;
+			font-size:1em;
+		}
+		.card {
+			padding: 5px;
+			background-color: #ccc;
+			border-radius:5px;
+		}
+		.head_card
+		{
+			-webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.51);
+			-moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.51);
+			box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.51);
+			padding:5px;
+			background-color:#999;
+			border-radius:5px
+		}
+		.content_holder
+		{
+			padding:15px;
+			background-color:#666;
+			margin:10px;
+			border-radius:5px;
+		}
