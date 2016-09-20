@@ -40,7 +40,7 @@
 					{ source: 6, target: 7 },
 					{ source: 7, target: 8 },
 					{ source: 8, target: 9 },
-					{ source: 9, target: 1 }
+					{ source: 9, target: 0 }
 				]
 			};
 
@@ -66,18 +66,21 @@
 				.data(dataset.edges)
 				.enter()
 				.append("line")
-				.style("stroke", "#333")
-				.style("stroke-width", 1);
+				.style("stroke", function(d, i) {
+					return colors(i);
+				})
+				.style("stroke-width", 15);
 			
 			//Create nodes as circles
 			var nodes = svg.selectAll("circle")
 				.data(dataset.nodes)
 				.enter()
 				.append("circle")
-				.attr("r", 10)
-				.style("fill", function(d, i) {
-					return colors(i);
-				})
+				.attr("r", 8)
+				.style("fill", "#333"//function(d, i) {
+					//return colors(i);
+					//}
+				)
 				.call(force.drag);
 			
 			//Every time the simulation "ticks", this will be called
