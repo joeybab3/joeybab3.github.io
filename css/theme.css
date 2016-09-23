@@ -13,6 +13,7 @@ body
 			padding: 5px;
 			background-color: #ccc;
 			border-radius:5px;
+			margin-bottom: 15px;
 		}
 		.head_card
 		{
@@ -29,4 +30,15 @@ body
 			background-color:#666;
 			margin:10px;
 			border-radius:5px;
+		}
+		.content_tile
+		{
+			-webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.50);
+			-moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.50);
+			box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.50);
+			padding:5px;
+			background-color:#999;
+			border-radius:5px;
+			width:250px;
+			height:250px;
 		}

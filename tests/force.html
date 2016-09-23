@@ -37,7 +37,7 @@
 					{ name: "16" },
 					{ name: "17" },
 					{ name: "18" },
-					{ name: "19" },
+					{ name: "19", charge: 300 },
 				],
 				edges: [
 					{ source: 0, target: 1 },
@@ -57,7 +57,7 @@
 					{ source: 13, target: 12 },
 					{ source: 14, target: 13 },
 					{ source: 15, target: 14 },
-					{ source: 16, target: 10 },
+					{ source: 16, target: 10 }
 					
 				]
 			};
@@ -68,7 +68,7 @@
 								 .links(dataset.edges)
 								 .size([w, h])
 								 .linkDistance([50])
-								 .charge([-100])
+								 .charge([-50])
 								 .start();
 
 			var colors = d3.scale.category10();
