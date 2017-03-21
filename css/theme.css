@@ -1,8 +1,7 @@
 body
-		{
-			background-color:#333;
-			
-		}
+{
+	background-color:#333;
+}
 		header
 		{
 			font-family: Impact, Charcoal, sans-serif;
@@ -41,6 +40,7 @@ body
 			border-radius:5px;
 			width:250px;
 			height:250px;
+			margin:5px;
 		}
 		
 		body img {
