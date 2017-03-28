@@ -55,6 +55,14 @@ img {
 	margin-bottom:10px;
 	padding:5px;
 }
+.tile
+{
+	background-color:#666666;
+	border-radius:10px;
+	margin-bottom:10px;
+	padding:5px;
+	display:inline;
+}
 em
 {
 font-family: sans, cursive;	
