@@ -13,7 +13,7 @@
 		<script type="text/javascript">
 
 			//Width and height
-			var w = 750;//(document.width !== undefined) ? document.width : document.body.offsetWidth;
+			var w = 5000;//(document.width !== undefined) ? document.width : document.body.offsetWidth;
 			var h = 750;//(document.height !== undefined) ? document.height : document.body.offsetHeight;
 
 			//Original data
@@ -68,7 +68,7 @@
 								 .links(dataset.edges)
 								 .size([w, h])
 								 .linkDistance([50])
-								 .charge([-50])
+								 .charge([-100])
 								 .start();
 
 			var colors = d3.scale.category10();
