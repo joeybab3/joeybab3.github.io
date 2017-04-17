@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<style ="text/css">
+    		img
+    		{
+    		    transition: transform .5s;
+    		    width:50%;
+    		}
+		
+		    img:hover
+    		{
+    		    transform: scale(2.5s);
+    		}
+			#image-container
+			{
+				margin:auto;
+				width:600px;
+			}
+			.info
+			{
+				background-color:#666666;
+				border: 1px solid #ff00ff;
+				width:600px;
+			}
+		</style>
+		<script type = "text/javascript">
+			$(document).ready(function(){
+				var i=1;
+				$("table.selector img").each(function() {
+					var newN = i;
+		    		jQuery(this).mouseover(function() {
+						$("#high-res").attr("src", "aprilla/pic"+newN+".jpg");
+						$("#filename").text("pic"+newN+".jpg");
+					}).mouseout(function() {});
+					i++;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<br>
+		<h1 align="center">High Resolution Original Shots</h1>
+		<a href="index.html"><h1>Back Home</h1></a>
+		<div id="image-container">
+			<table class="selector">
+				<tbody>
+					<tr>
+						<img src="aprilla/pic1.jpg">
+					</tr>
+					<tr>
+						<img src="aprilla/pic2.jpg">
+					</tr>
+					<tr>
+						<img src="aprilla/pic3.jpg">
+					</tr>
+					<tr>
+						<img src="aprilla/pic4.jpg">
+					</tr>
+					<tr>
+						<img src="aprilla/pic5.jpg">
+					</tr>
+					<tr>
+						<img src="aprilla/pic6.jpg">
+					</tr>
+					<tr>
+						<img src="aprilla/pic7.jpg">
+					</tr>
+					<tr>
+						<img src="aprilla/pic8.jpg">
+					</tr>
+					<tr>
+						<img src="aprilla/pic9.jpg">
+					</tr>
+					<tr>
+						<img src="aprilla/pic10.jpg">
+					</tr>
+					<tr>
+						<img src="aprilla/pic11.jpg">
+					</tr>
+					<tr>
+						<img src="aprilla/pic12.jpg">
+					</tr>
+					<tr>
+						<img src="aprilla/pic13.jpg">
+					</tr>
+					<tr>
+						<img src="aprilla/pic14.jpg">
+					</tr>
+					<tr>
+						<img src="aprilla/pic15.jpg">
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+		</div>
+	</body>
+</html>

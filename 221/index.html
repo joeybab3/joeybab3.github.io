@@ -1,0 +1,126 @@
+<!--
+221indexB.html demonstrates basic JavaScript and CSS
+Unpublished work (c)2013 Project Lead The Way
+CSE Activity 2.2.1 HTML5andJavaScript
+Version 12/19/2013 
+-->
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<style ="text/css">
+    		img
+    		{
+    		    transition: transform .5s;   
+    		}
+		
+		    img:hover
+    		{
+    		    transform: scale(2.5s);
+    		}
+			#image-container
+			{
+				margin:auto;
+				width:600px;
+			}
+			.info
+			{
+				background-color:#666666;
+				border: 1px solid #ff00ff;
+				width:600px;
+			}
+		</style>
+		<script type = "text/javascript">
+			$(document).ready(function(){
+				var i=1;
+				$("table.selector img").each(function() {
+					var newN = i;
+		    		jQuery(this).mouseover(function() {
+						$("#high-res").attr("src", "aprilla/pic"+newN+".jpg");
+						$("#filename").text("pic"+newN+".jpg");
+					}).mouseout(function() {});
+					i++;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<br>
+		<h1 align="center">Gallery</h1>
+		<div id="image-container">
+			<table class="selector">
+				<tbody>
+					<tr>
+						<td>
+							<img src="aprilla/pic1thumb.jpg">
+						</td>
+						<td>
+							<img src="aprilla/pic2thumb.jpg">
+						</td>
+						<td>
+							<img src="aprilla/pic3thumb.jpg">
+						</td>
+						<td>
+							<img src="aprilla/pic4thumb.jpg">
+						</td>
+						<td>
+							<img src="aprilla/pic5thumb.jpg">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="aprilla/pic6thumb.jpg">
+						</td>
+						<td>
+							<img src="aprilla/pic7thumb.jpg">
+						</td>
+						<td>
+							<img src="aprilla/pic8thumb.jpg">
+						</td>
+						<td>
+							<img src="aprilla/pic9thumb.jpg">
+						</td>
+						<td>
+							<img src="aprilla/pic10thumb.jpg">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="aprilla/pic11thumb.jpg">
+						</td>
+						<td>
+							<img src="aprilla/pic12thumb.jpg">
+						</td>
+						<td>
+							<img src="aprilla/pic13thumb.jpg">
+						</td>
+						<td>
+							<img src="aprilla/pic14thumb.jpg">
+						</td>
+						<td>
+							<img src="aprilla/pic15thumb.jpg">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<div class="info">
+				<br />
+				<table>
+					<tr>
+						<th rowspan='3'>
+							<img id="high-res" src='aprilla/pic1.jpg' width='250'>
+						</th>
+						<th align='left'>Artist's Name:</th>
+						<th align='left'>Aprill Aronie</th>
+					</tr>
+					<tr>
+						<th align='left'>File Name: </th>
+						<th id="filename" align='left'>pic1.jpg </th>
+					<tr>
+				</table> 
+			</div>
+			<a href="hd.html"><h1>High Resolution Images</h1></a>
+		</div>
+	</body>
+</html>
